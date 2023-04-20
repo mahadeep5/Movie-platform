@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Popup JS</title>
+    <link rel="stylesheet" href="css/trailer.css">
+    <script src="all.min.js"></script>
+</head>
+
+<body>
+    <div class="card">
+        <div class="imgbox">
+            <img src="1.jpg">
+        </div>
+        <div class="descr">
+            <h2>Moana</h2>
+            <ul>
+                <li>2016</li>
+                <li>103min</li>
+                <li>Adventure</li>
+            </ul>
+            <ul class="rating">
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+            </ul>
+            <div class="textContent">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore mollitia maxime magnam vel aliquid nemo fugit, quam optio iure. Rerum deserunt perspiciatis distinctio accusamus possimus dicta voluptatum veritatis modi ab.</p>
+                <a href="#">Read More</a>
+            </div>
+            <button><i class="fa fa-play"></i> Watch trailer</button>
+        </div>
+    </div>
+
+    <div class="trailer">
+        <video src="trailer.mp4" controls="true"></video>
+
+        <span class="close">&times;</span>
+    </div>
+
+    <script>
+        const button = document.querySelector("button");
+        const close = document.querySelector(".close");
+        const trailer = document.querySelector(".trailer");
+        const video = document.querySelector("video");
+
+        button.addEventListener('click', () => {
+            trailer.style.visibility = "visible";
+            trailer.style.opacity = 1;
+        });
+
+        close.addEventListener('click', () => {
+            trailer.style.visibility = "hidden";
+            trailer.style.opacity = 0;
+
+            video.pause();
+            video.currentTime = 0;
+        });
+    </script>
+</body>
+
+</html>

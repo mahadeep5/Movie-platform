@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="viewport" content="IE=edge">
+    <meta name="viewport" content="width=devicde-width, initial-scale=1.0">
+    <title>Responsive movies website</title>
+    <!--link to css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--link swiper-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!--fav icon-->
+    <link rel="shortcut icon" href="img/fav-icon.png" type="image/x-icon">
+    <!--box icon-->
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css " rel="stylesheet">
+</head>
+
+<body>
+
+    <!--header-->
+    <header>
+        <!--nav-->
+        <div class="nav container">
+            <a href="index.html " class="logo">Movie <span>Store</span> 
+            </a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="login.php" class="nav-link">
+                            <span class='nav-link-title '>login</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="signup.php" class="nav-link">
+                            <span class='nav-link-title'>Sign Up</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="logout.php" class="nav-link">
+                            <span class='nav-link-title'>log out</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <!--navbar-->
+        <div class="navbar">
+            <a href="index.html " class=" nav-link nav-active ">
+                <i class='bx bx-home'></i>
+                <span class='nav-link-title '>Home</span>
+            </a>
+
+            <a href="#popular" class="nav-link ">
+                <i class='bx bxs-hot'></i>
+                <span class='nav-link-title '>Trending</span>
+            </a>
+            <a href="#movies" class="nav-link ">
+                <i class='bx bx-compass'></i>
+                <span class='nav-link-title '>Explore</span>
+            </a>
+            <a href="trailer.html " class="nav-link ">
+                <i class='bx bx-tv'></i>
+                <span class='nav-link-title'>Movies</span>
+            </a>
+            <a href="Youtube.html " class="nav-link ">
+                <i class='bx bxl-youtube'></i>
+                <span class='nav-link-title'>Youtube</span>
+            </a>
+            <a href="Search.html " class="nav-link ">
+                <i class='bx bx-search'></i>
+                <span class='nav-link-title'>Search</span>
+            </a>
+            <a href="video.html " class="nav-link">
+                <i class='bx bx-play-circle'></i>
+                <span class='nav-link-title '>play-list</span>
+            </a>
+            <!--languages-->
+            <form name="webpage">
+                <select name="portfolio" id="portfolio">
+                <option value="#">Languages</option>
+
+                <option value="kannada.html">Kannada</option>
+
+                <option value="English.html">English</option>
+
+                <option value="Hindi.html">Hindi</option>
+
+                </select>
+            </form>
+            <style>
+                select#portfolio {
+                    font-size: 12px;
+                    background-color: var(--container-color);
+                    color: white;
+                }
+            </style>
+
+            <script>
+                var urlMenu = document.getElementById('portfolio');
+                urlMenu.onchange = function() {
+                    var useroption = this.options[this.selectedIndex];
+                    if (useroption.value != "nothing") {
+                        window.open(useroption.value, "KANNADA ENGLISH HINDHI", "");
+                    }
+                }
+            </script>
+        </div>
+        </div>
+    </header>
+
+    <!--movies section start-->
+    <section class="movies container" id="movies">
+
+        <!--heading-->
+        <div class="heading ">
+        </div>
+        <!--movies content-->
+        <div class="movies-content ">
+            <!--movie box 1-->
+            <div class=" movie-box ">
+                <img src="img/movie37.jpg " alt=" " class="movie-box-img ">
+                <div class=" box-text ">
+                    <h2 class="movie-title ">Pushpa</h2>
+                    <span class="movie-type ">Action</span>
+                    <a href="trailer.html " class="watch-btn play-btn ">
+                        <i class='bx bx-right-arrow'></i>
+                    </a>
+                </div>
+            </div>
+            <!--movie box 2-->
+            <div class=" movie-box ">
+                <img src="img/movie38.jpg " alt=" " class="movie-box-img ">
+                <div class=" box-text ">
+                    <h2 class="movie-title ">Mimi</h2>
+                    <span class="movie-type ">comedy</span>
+                    <a href=" trailer2.html " class="watch-btn play-btn ">
+                        <i class='bx bx-right-arrow '></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <!--movie box 3-->
+            <div class=" movie-box ">
+                <img src="img/movie39.jpg " alt=" " class="movie-box-img ">
+                <div class=" box-text ">
+                    <h2 class="movie-title ">SHEHZADA</h2>
+                    <span class="movie-type ">Action</span>
+                    <a href="play-page2.html " class="watch-btn play-btn ">
+                        <i class='bx bx-right-arrow '></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <!--movie box 4-->
+            <div class=" movie-box ">
+                <img src="img/movie40.jpg " alt=" " class="movie-box-img ">
+                <div class=" box-text ">
+                    <h2 class="movie-title ">Lost</h2>
+                    <span class="movie-type "></span>
+                    <a href=" play-page3.html " class="watch-btn play-btn ">
+                        <i class='bx bx-right-arrow '></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <!--movie box 5-->
+            <div class=" movie-box ">
+                <img src="img/movie41.jpg " alt=" " class="movie-box-img ">
+                <div class=" box-text ">
+                    <h2 class="movie-title ">Dilwale</h2>
+                    <span class="movie-type ">Love</span>
+                    <a href=" play-page4.html " class="watch-btn play-btn ">
+                        <i class='bx bx-right-arrow '></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <!--movie box 6-->
+            <div class=" movie-box ">
+                <img src="img/movie42.jpg " alt=" " class="movie-box-img ">
+                <div class=" box-text ">
+                    <h2 class="movie-title ">Run Way 34</h2>
+                    <span class="movie-type ">Action/Sci-fi</span>
+                    <a href=" play-page5.html " class="watch-btn play-btn ">
+                        <i class='bx bx-right-arrow'></i>
+                    </a>
+                </div>
+            </div>
+
+            <!--movie box 7-->
+            <div class=" movie-box ">
+                <img src="img/movie43.jpg " alt=" " class="movie-box-img ">
+                <div class="box-text ">
+                    <h2 class="movie-title ">Love AAJ KAL</h2>
+                    <span class="movie-type ">Comedy</span>
+                    <a href="play-page6.html " class="watch-btn play-btn ">
+                        <i class='bx bx-right-arrow '></i>
+                    </a>
+                </div>
+            </div>
+
+            <!--movie box 8-->
+            <div class=" movie-box ">
+                <img src="img/movie44.jpg " alt=" " class="movie-box-img ">
+                <div class=" box-text ">
+                    <h2 class="movie-title ">Ramleela</h2>
+                    <span class="movie-type ">Action</span>
+                    <a href="play-page7.html " class="watch-btn play-btn ">
+                        <i class='bx bx-right-arrow'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--movies section End-->
+
+    <!--copyright-->
+    <div class="copyright ">
+        <p>&#169; All right reserved</p>
+    </div>
+    <!--link to swiper js-->
+    <script src="js/swiper-bundle.min.js "></script>
+    <!--link to js-->
+    <script src="js/main.js "></script>
+</body>
+
+</html>

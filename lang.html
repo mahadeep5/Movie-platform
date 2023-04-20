@@ -1,0 +1,30 @@
+<!--languages-->
+<form name="webpage">
+    <select name="portfolio" id="portfolio">
+                <option value="#">Languages</option>
+
+                <option value="kannada.html">Kannada</option>
+
+                <option value="English.html">English</option>
+
+                <option value="Hindi.html">Hindi</option>
+
+                </select>
+</form>
+<style>
+    select#portfolio {
+        font-size: 15px;
+        background-color: var(--container-color);
+        color: white;
+    }
+</style>
+
+<script>
+    var urlMenu = document.getElementById('portfolio');
+    urlMenu.onchange = function() {
+        var useroption = this.options[this.selectedIndex];
+        if (useroption.value != "nothing") {
+            window.open(useroption.value, "KANNADA ENGLISH HINDHI", "");
+        }
+    }
+</script>
